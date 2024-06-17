@@ -1,0 +1,41 @@
+1. Differences
+Some differences between Python and JS is the syntax, the usage, and types
+
+2. Dictionary
+To get a missing key you can use the "get" method or you can use the try and except but in my opionion get is the simplier therefore more efficient method. 
+
+3. Unit Test
+Checks a portion of your code to make sure it runs correct.
+
+4. Integration Test 
+Checks if several portions run correctly together
+
+5. Role of application framework 
+Provides tools to handle requests and routing
+
+6. Better fit for application
+Use a route URL parameter for essential info, like a user ID in /user/123.
+
+7. How to Collect Data using Flask
+Define it in the route then access it in the function.
+
+8.  Query string with flask
+request.args
+
+9. Data from body with flask
+request.json
+
+10. What is a Cookie
+Data stored in a web browser ex. remembering your login password for next time.
+11. Session Object Flask
+Stores data like login access for websites
+12. Flask's jsonify() 
+Takes your python and turns it to JSON to be easy for the api to understand
+Example: from flask import jsonify
+
+@app.route('/data')
+def get_data():
+    data = {'key': 'value'}
+    return jsonify(data)
+
+
